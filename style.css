@@ -1,0 +1,256 @@
+/* BODY BACKGROUND (ANIMATED GRADIENT 🔥) */
+body{
+margin:0;
+font-family: Arial;
+background: linear-gradient(135deg,#0f172a,#020617,#1e293b);
+background-size: 300% 300%;
+animation: gradientMove 10s ease infinite;
+color:white;
+}
+
+/* BACKGROUND ANIMATION */
+@keyframes gradientMove {
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* Layout */
+.main-layout{
+display:flex;
+}
+
+/* Sidebar */
+.sidebar{
+width:220px;
+height:100vh;
+background:#020617;
+padding:20px;
+position:fixed;
+border-right:1px solid rgba(255,255,255,0.05);
+}
+
+.sidebar h2{
+margin-bottom:20px;
+color:#38bdf8;
+}
+
+.sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.sidebar li{
+padding:10px;
+margin:10px 0;
+cursor:pointer;
+border-radius:5px;
+transition:0.3s;
+color:white;
+}
+
+.sidebar li:hover,
+.sidebar .active{
+background:#38bdf8;
+color:#020617;
+}
+
+/* Content */
+.content{
+margin-left:240px;
+width:100%;
+}
+
+/* Header */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:rgba(30,41,59,0.8);
+backdrop-filter:blur(8px);
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+/* Container Grid */
+.container{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+padding:20px;
+}
+
+/* CARDS (GLASS + GLOW 🔥) */
+.card{
+background: rgba(255,255,255,0.05);
+backdrop-filter: blur(10px);
+padding:20px;
+border-radius:15px;
+box-shadow:0 8px 30px rgba(0,0,0,0.3);
+border:1px solid rgba(255,255,255,0.08);
+transition:0.3s;
+}
+
+/* HOVER EFFECT */
+.card:hover{
+transform: translateY(-6px);
+box-shadow:0 15px 35px rgba(56,189,248,0.2);
+border-color:#38bdf8;
+}
+
+/* BUTTONS */
+button{
+padding:8px 14px;
+background:linear-gradient(45deg,#3b82f6,#06b6d4);
+border:none;
+border-radius:6px;
+color:white;
+cursor:pointer;
+font-weight:500;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+box-shadow:0 5px 15px rgba(59,130,246,0.5);
+}
+
+/* Inputs */
+input{
+padding:10px;
+width:70%;
+border-radius:5px;
+border:none;
+}
+
+/* GitHub Links */
+#repoList a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+#repoList a:hover{
+text-decoration:underline;
+}
+
+/* Smooth Scroll */
+html{
+scroll-behavior:smooth;
+}
+
+/* Chart */
+canvas{
+width:100% !important;
+height:250px !important;
+}
+
+/* Avatar */
+#githubAvatar{
+width:120px;
+height:120px;
+object-fit:cover;
+border-radius:50%;
+margin-bottom:10px;
+border:3px solid #38bdf8;
+}
+
+/* Center GitHub */
+#github{
+text-align:center;
+}
+
+/* Progress */
+#progressText{
+margin-top:10px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+/* LIGHT MODE */
+.light-mode{
+background:#f1f5f9;
+color:#111;
+}
+
+.light-mode .card{
+background:#ffffff;
+color:#111;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.light-mode header{
+background:#ffffff;
+color:#111;
+border-bottom:1px solid #ddd;
+}
+
+.light-mode .sidebar{
+background:#1e293b;
+color:white;
+}
+/* STREAK BAR */
+.streak-bar{
+    width:100%;
+    height:10px;
+    background:#1e293b;
+    border-radius:10px;
+    margin:10px 0;
+    overflow:hidden;
+}
+
+#streakFill{
+    height:100%;
+    width:0%;
+    background:linear-gradient(90deg,#22c55e,#38bdf8);
+    border-radius:10px;
+    transition:0.5s;
+}
+
+/* MESSAGE */
+#streakMessage{
+    font-size:13px;
+    color:#94a3b8;
+    margin-bottom:10px;
+}
+.skills{
+    margin-top:10px;
+}
+
+.skills span{
+    display:inline-block;
+    background:#1e293b;
+    padding:6px 10px;
+    margin:5px 5px 0 0;
+    border-radius:6px;
+    font-size:12px;
+    border:1px solid #38bdf8;
+    transition:0.3s;
+}
+
+.skills span:hover{
+    background:#38bdf8;
+    color:#020617;
+}
+.projects{
+    padding-left:15px;
+}
+
+.projects li{
+    margin-bottom:12px;
+    line-height:1.4;
+}
+.stats-box{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+}
+
+.stat{
+    text-align:center;
+    flex:1;
+}
+
+.stat h3{
+    color:#38bdf8;
+    margin-bottom:5px;
+}
